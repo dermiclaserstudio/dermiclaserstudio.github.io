@@ -1,0 +1,1303 @@
+<!--
+ARCHIVOS NECESARIOS EN /images/
+
+logo-dermic-laser.webp
+favicon.png
+og-dermic-laser.webp
+
+hollywood-peel-antes-despues.webp
+tatuaje-antes-despues.webp
+manchas-antes-despues.webp
+ojeras-antes-despues.webp
+
+instagram-01.webp
+instagram-02.webp
+instagram-03.webp
+instagram-04.webp
+instagram-05.webp
+instagram-06.webp
+-->
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dermic Láser Private Studio | San Fernando</title>
+  
+  <!-- SEO & OPEN GRAPH -->
+  <meta name="description" content="Dermic Láser es un estudio privado en San Fernando especializado en Hollywood Peel, remoción láser de tatuajes, manchas, ojeras y tratamientos estéticos avanzados de la piel con tecnología Nd:YAG Q-Switched.">
+  <meta property="og:title" content="Dermic Láser Private Studio | San Fernando">
+  <meta property="og:description" content="Estudio privado en San Fernando especializado en Hollywood Peel, remoción de tatuajes, manchas, ojeras y tratamientos estéticos avanzados con tecnología láser Nd:YAG Q-Switched.">
+  <meta property="og:type" content="website">
+  <!-- IMAGEN OPEN GRAPH PROVISIONAL (Reemplazar en /images/og-dermic-laser.webp) -->
+  <meta property="og:image" content="images/og-dermic-laser.webp">
+
+  <!-- FAVICON DERMIC LÁSER -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+  <!-- TIPOGRAFÍAS DE GOOGLE -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- TAILWIND PLAY CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              gold: '#C5A880',
+              goldHover: '#b3956e',
+              goldLight: '#FDFBF7',
+              dark: '#1E293B',
+              charcoal: '#0F172A',
+              muted: '#64748B',
+              border: '#E2E8F0',
+              cardBg: '#FAFAFC'
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    section {
+      scroll-margin-top: 80px;
+    }
+    .gold-gradient {
+      background: linear-gradient(135deg, #C5A880 0%, #A8895E 100%);
+    }
+    .text-gold-gradient {
+      background: linear-gradient(135deg, #A8895E 0%, #C5A880 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  </style>
+</head>
+<body class="bg-white text-brand-dark font-sans antialiased selection:bg-brand-gold selection:text-white">
+
+  <!-- ===== NAVBAR STICKY CON LOGO ===== -->
+  <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md border-b border-brand-border transition-all">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- LOGO PRINCIPAL DERMIC LÁSER -->
+      <a href="#" class="flex items-center gap-3 group">
+        <img src="images/logo-dermic-laser.webp" alt="Logo Dermic Láser Private Studio" class="w-10 h-10 sm:w-11 sm:h-11 rounded-lg object-contain border border-brand-border/60 shadow-xs group-hover:border-brand-gold transition-colors">
+        <div class="flex flex-col">
+          <span class="font-serif text-xl sm:text-2xl font-semibold tracking-wider text-brand-charcoal leading-tight">DERMIC LÁSER</span>
+          <span class="text-[9px] sm:text-[10px] tracking-[0.25em] text-brand-gold uppercase font-semibold">PRIVATE STUDIO · SAN FERNANDO</span>
+        </div>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs uppercase tracking-widest font-medium text-brand-muted">
+        <a href="#servicios" class="hover:text-brand-gold transition-colors">Servicios</a>
+        <a href="#tecnologia" class="hover:text-brand-gold transition-colors">Tecnología</a>
+        <a href="#antes-despues" class="hover:text-brand-gold transition-colors">Casos</a>
+        <a href="#precios" class="hover:text-brand-gold transition-colors">Precios</a>
+        <a href="#faq" class="hover:text-brand-gold transition-colors">Preguntas</a>
+        <a href="#contacto" class="hover:text-brand-gold transition-colors">Contacto</a>
+      </nav>
+
+      <div class="flex items-center space-x-3">
+        <!-- ===== LINK CALENDLY HEADER ===== -->
+        <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="hidden sm:inline-flex items-center justify-center px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-white gold-gradient hover:opacity-95 rounded-full shadow-sm transition-all hover:shadow-md">
+          Agendar Cita
+        </a>
+        <button id="mobileMenuBtn" class="lg:hidden p-2 text-brand-dark focus:outline-none" aria-label="Abrir Menú">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Nav Menu -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-white border-b border-brand-border px-6 py-5 space-y-4 text-sm font-medium tracking-wide">
+      <a href="#servicios" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Servicios</a>
+      <a href="#tecnologia" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Tecnología</a>
+      <a href="#antes-despues" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Casos Clínicos</a>
+      <a href="#precios" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Tarifario Completo</a>
+      <a href="#faq" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Preguntas Frecuentes</a>
+      <a href="#contacto" class="block text-brand-muted hover:text-brand-gold" onclick="toggleMobileMenu()">Contacto</a>
+      <!-- ===== LINK CALENDLY MOBILE ===== -->
+      <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="block text-center py-2.5 text-xs font-semibold uppercase tracking-wider text-white gold-gradient rounded-full" onclick="toggleMobileMenu()">
+        Agendar Cita en Calendly
+      </a>
+    </div>
+  </header>
+
+  <!-- ===== HERO PRINCIPAL ===== -->
+  <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-gradient-to-b from-brand-goldLight via-white to-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-border shadow-xs text-xs font-medium text-brand-charcoal mb-8">
+        <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
+        Tecnología Láser Nd:YAG Q-Switched en San Fernando
+      </div>
+
+      <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-light text-brand-charcoal tracking-tight leading-[1.1] mb-6">
+        Dermic Laser Studio <br class="hidden sm:inline"/>
+        <span class="italic font-normal text-gold-gradient">Remoción Tatuajes, Manchas y Rejuvenecimiento con  Láser de Precisión</span>
+      </h1>
+
+      <p class="max-w-2xl mx-auto text-base sm:text-lg text-brand-muted font-light leading-relaxed mb-10">
+        Tratamientos estéticos especializados, no invasivos y protocolos personalizados en un estudio privado diseñado para brindarte total confort, reserva y resultados progresivos.
+      </p>
+
+      <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <!-- ===== LINK CALENDLY HERO ===== -->
+        <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="w-full sm:w-auto px-8 py-4 text-xs sm:text-sm font-semibold uppercase tracking-widest text-white gold-gradient rounded-full hover:shadow-lg transition-all transform hover:-translate-y-0.5 text-center">
+          Reservar Cita en Calendly
+        </a>
+        <a href="#servicios" class="w-full sm:w-auto px-8 py-4 text-xs sm:text-sm font-medium uppercase tracking-widest text-brand-dark bg-white border border-brand-border rounded-full hover:bg-brand-cardBg transition-all text-center">
+          Ver Tratamientos
+        </a>
+      </div>
+
+      <!-- Trust Badges -->
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-16 mt-16 border-t border-brand-border/60 max-w-4xl mx-auto text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-brand-charcoal">Atención 100% Privada</h4>
+            <p class="text-xs text-brand-muted">Sesiones 1 a 1 agendadas con reserva.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-brand-charcoal">Tecnología Fotoacústica</h4>
+            <p class="text-xs text-brand-muted">Pulsos en nanosegundos no invasivos.</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold">
+            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+          </div>
+          <div>
+            <h4 class="text-sm font-semibold text-brand-charcoal">Evaluación Incluida</h4>
+            <p class="text-xs text-brand-muted">Evaluación técnica y personalizada de piel.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS (6 CARDS PRINCIPALES) ===== -->
+  <section id="servicios" class="py-24 bg-white border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Catálogo Especializado</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Tratamientos Especializados</h2>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Tratamientos estéticos avanzados diseñados para aportar luminosidad, mejorar la textura y el cuidado armónico de tu piel.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Hollywood Peel -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">✨</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Hollywood Peel</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Carbón Activo + Láser Nd:YAG</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Tratamiento estético enfocado en aportar luminosidad inmediata, higiene profunda del poro y ayudar a regular el exceso de oleosidad sin tiempos prolongados de reposo.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">$70.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Agendar &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 2: Remoción de Tatuajes -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">✒️</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Remoción de Tatuajes</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Tinta Negra, Color y Microblading</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Protocolo fotoacústico diseñado para fragmentar selectivamente partículas de tinta y pigmentos cosméticos en micropartículas, facilitando su depuración fisiológica progresiva.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">Desde $50.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Cotizar &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 3: Manchas y Pigmentación -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">🍂</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Manchas y Pigmentación</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Lentigos Solares, Pecas y Zonas Oscuras</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Aclaramiento y atenuación de acumulaciones localizadas de melanina en rostro, manos o zonas corporales, buscando unificar el tono cutáneo de forma progresiva.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">Desde $30.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Agendar &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 4: Atenuación de Ojeras -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">👁️</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Atenuación de Ojeras</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Protocolo Despigmentante Pigmentario</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Tratamiento suave enfocado en atenuar el tono café de la pigmentación periocular y apoyar la estimulación superficial para una mirada más descansada.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">$50.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Agendar &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 5: Cicatrices de Acné -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">🧬</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Marcas y Cicatrices de Acné</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Tratamiento Fraccionado Honeycomb</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Estímulo de renovación dérmica y mejora progresiva de la textura irregular en mejillas y rostro mediante tecnología de micropulsos fraccionados.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">$75.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Agendar &rarr;</a>
+          </div>
+        </div>
+
+        <!-- Card 6: Rejuvenecimiento, Estrías y Cicatrices -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 rounded-xl bg-white border border-brand-border flex items-center justify-center text-brand-gold mb-6 shadow-xs">
+              <span class="text-xl">💎</span>
+            </div>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Rejuvenecimiento & Estrías</h3>
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Estimulación Tisular & Textura</p>
+            <p class="text-sm text-brand-muted leading-relaxed mb-6">
+              Protocolos diseñados para incentivar la vitalidad dérmica, atenuar líneas finas y acompañar la mejora estética de cicatrices y marcas corporales.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-brand-border flex items-center justify-between">
+            <div>
+              <span class="text-xs text-brand-muted block">Precio por sesión</span>
+              <span class="text-lg font-semibold text-brand-charcoal font-sans">Desde $70.000 CLP</span>
+            </div>
+            <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover flex items-center gap-1">Agendar &rarr;</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN TECNOLOGÍA ===== -->
+  <section id="tecnologia" class="py-24 bg-brand-goldLight border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Ciencia & Precisión</span>
+          <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-6">
+            Láser Nd:YAG Q-Switched: <br/>
+            <span class="italic text-brand-gold">Efecto Fotoacústico</span>
+          </h2>
+          <p class="text-brand-muted text-base leading-relaxed mb-6">
+            Nuestra tecnología emite pulsos ultracortos en nanosegundos diseñados para concentrar la energía de forma selectiva sobre la diana a tratar (pigmento o partículas de tinta).
+          </p>
+          <p class="text-brand-muted text-base leading-relaxed mb-8">
+            Este efecto fotoacústico busca fragmentar las partículas cromóforas en microelementos más pequeños para que el propio organismo pueda facilitar su eliminación paulatina, minimizando el calentamiento excesivo de la piel adyacente.
+          </p>
+
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
+              <div class="text-brand-gold text-lg mt-0.5">⚡</div>
+              <div>
+                <h4 class="text-sm font-semibold text-brand-charcoal">Pulsos de Alta Velocidad</h4>
+                <p class="text-xs text-brand-muted">Emisión en nanosegundos para un estímulo selectivo y controlado.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
+              <div class="text-brand-gold text-lg mt-0.5">🎯</div>
+              <div>
+                <h4 class="text-sm font-semibold text-brand-charcoal">Longitudes de Onda Específicas</h4>
+                <p class="text-xs text-brand-muted">1064 nm, 532 nm y sonda fraccionada Honeycomb para diferentes requerimientos estéticos.</p>
+              </div>
+            </div>
+            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
+              <div class="text-brand-gold text-lg mt-0.5">🌿</div>
+              <div>
+                <h4 class="text-sm font-semibold text-brand-charcoal">Recuperación Confortable</h4>
+                <p class="text-xs text-brand-muted">Procedimientos no invasivos con protocolos orientados a un rápido retorno a la rutina.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white border border-brand-border rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-center items-center text-center">
+          <div class="w-20 h-20 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-3xl text-brand-gold mb-6">
+            🔬
+          </div>
+          <h3 class="font-serif text-3xl font-medium text-brand-charcoal mb-4">¿Cómo actúa en tu piel?</h3>
+          <p class="text-sm text-brand-muted leading-relaxed max-w-md mb-8">
+            La emisión lumínica interactúa con el pigmento específico. Tras su fragmentación mecánica, se estimula la renovación superficial y la respuesta biológica de depuración natural de la piel.
+          </p>
+          <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-white gold-gradient rounded-full hover:shadow-md transition-all">
+            Agendar Evaluación Técnica
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN CASOS ANTES Y DESPUÉS ===== -->
+  <section id="antes-despues" class="py-24 bg-white border-t border-brand-border">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Resultados Reales</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Casos y Transformaciones</h2>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Registro visual de la evolución y respuesta estética progresiva en cabina.</p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- FOTO 1 - HOLLYWOOD PEEL -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl overflow-hidden p-4 group hover:border-brand-gold transition-colors">
+          <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden mb-3 border border-brand-border/60">
+            <img src="images/hollywood-peel-antes-despues.webp" alt="Caso Clínico Hollywood Peel" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-charcoal">Hollywood Peel</h4>
+          <p class="text-xs text-brand-gold font-medium">Luminosidad y control de poros</p>
+        </div>
+
+        <!-- FOTO 2 - REMOCIÓN DE TATUAJE -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl overflow-hidden p-4 group hover:border-brand-gold transition-colors">
+          <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden mb-3 border border-brand-border/60">
+            <img src="images/tatuaje-antes-despues.webp" alt="Caso Clínico Borrado de Tatuaje" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-charcoal">Borrado de Tatuaje</h4>
+          <p class="text-xs text-brand-gold font-medium">Atenuación progresiva de tinta</p>
+        </div>
+
+        <!-- FOTO 3 - MANCHAS -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl overflow-hidden p-4 group hover:border-brand-gold transition-colors">
+          <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden mb-3 border border-brand-border/60">
+            <img src="images/manchas-antes-despues.webp" alt="Caso Clínico Despigmentación Facial" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-charcoal">Manchas Faciales</h4>
+          <p class="text-xs text-brand-gold font-medium">Aclaramiento y unificación de tono</p>
+        </div>
+
+        <!-- FOTO 4 - OJERAS -->
+        <div class="bg-brand-cardBg border border-brand-border rounded-2xl overflow-hidden p-4 group hover:border-brand-gold transition-colors">
+          <div class="aspect-square bg-slate-100 rounded-xl overflow-hidden mb-3 border border-brand-border/60">
+            <img src="images/ojeras-antes-despues.webp" alt="Caso Clínico Atenuación de Ojeras" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          </div>
+          <h4 class="font-serif text-lg font-medium text-brand-charcoal">Atenuación de Ojeras</h4>
+          <p class="text-xs text-brand-gold font-medium">Aclarado de pigmentación periocular</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN PRECIOS & TARIFARIO DEFINITIVO (ACORDEONES COMPACTOS V4) ===== -->
+  <section id="precios" class="py-24 bg-brand-goldLight border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Tarifario Transparente</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Valores y Planes de Tratamiento</h2>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Tarifas por sesión individual y valores promocionales en Packs de 5 y 10 sesiones con opción de cuotas.</p>
+      </div>
+
+      <div class="space-y-4">
+
+        <!-- CATEGORÍA 1: REMOCIÓN DE TATUAJES & MICROBLADING -->
+        <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
+          <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
+            <div class="space-y-0.5 min-w-0">
+              <h3 class="font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Remoción de Tatuajes & Microblading</h3>
+              <p class="text-xs text-brand-muted truncate">Todos los colores, tamaños y micropigmentación</p>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+              <div class="text-right">
+                <span class="text-[10px] sm:text-xs text-brand-muted uppercase tracking-wider block font-medium">Desde</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+              <span class="price-icon w-8 h-8 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span>
+            </div>
+          </button>
+          
+          <div class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white">
+            
+            <!-- Item: Microblading / Cejas -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Eliminación Microblading / Cejas</h4>
+                <p class="text-xs text-brand-muted">Borrado o corrección de micropigmentación en cejas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$210.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$390.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tatuaje XS -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tatuaje XS (Hasta 5 cm)</h4>
+                <p class="text-xs text-brand-muted">Todos los colores · Tatuajes pequeños o firmas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$210.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$390.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tatuaje S -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tatuaje S (5 a 10 cm)</h4>
+                <p class="text-xs text-brand-muted">Todos los colores · Diseños de tamaño reducido.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$290.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$550.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$70.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tatuaje M -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tatuaje M (10 a 20 cm)</h4>
+                <p class="text-xs text-brand-muted">Todos los colores · Antebrazo, pantorrilla o áreas medias.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$380.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$690.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$90.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tatuaje L -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tatuaje L (20 a 30 cm)</h4>
+                <p class="text-xs text-brand-muted">Todos los colores · Media manga, muslo o pecho.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$650.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$1.150.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$150.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tatuaje XL -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tatuaje XL (+30 cm)</h4>
+                <p class="text-xs text-brand-muted">Todos los colores · Manga completa, espalda u obras extensas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$850.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$1.500.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$200.000 CLP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORÍA 2: TRATAMIENTOS FACIALES -->
+        <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
+          <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
+            <div class="space-y-0.5 min-w-0">
+              <h3 class="font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Tratamientos Faciales</h3>
+              <p class="text-xs text-brand-muted truncate">Luminosidad, estimulación dérmica y cuidado de la mirada</p>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+              <div class="text-right">
+                <span class="text-[10px] sm:text-xs text-brand-muted uppercase tracking-wider block font-medium">Desde</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+              <span class="price-icon w-8 h-8 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span>
+            </div>
+          </button>
+          
+          <div class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white">
+            
+            <!-- Item: Hollywood Peel -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <div class="flex items-center gap-2">
+                  <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Hollywood Peel</h4>
+                  <span class="text-[10px] bg-brand-goldLight text-brand-gold px-2 py-0.5 rounded-full font-semibold border border-brand-gold/30">Carbón Activo</span>
+                </div>
+                <p class="text-xs text-brand-muted">Efecto glow, limpieza de poros y control de oleosidad.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$290.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$550.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$70.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Rejuvenecimiento Facial Avanzado -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Rejuvenecimiento Facial Avanzado</h4>
+                <p class="text-xs text-brand-muted">Estimulación dérmica para tonicidad y líneas finas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$340.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$620.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$80.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Atenuación de Ojeras Pigmentarias -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Atenuación de Ojeras Pigmentarias</h4>
+                <p class="text-xs text-brand-muted">Aclaramiento del pigmento periocular y descanso de la mirada.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$200.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$390.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORÍA 3: MANCHAS Y PIGMENTACIÓN -->
+        <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
+          <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
+            <div class="space-y-0.5 min-w-0">
+              <h3 class="font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Manchas y Pigmentación</h3>
+              <p class="text-xs text-brand-muted truncate">Aclaramiento por zonas, daño solar, pecas y manchas corporales</p>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+              <div class="text-right">
+                <span class="text-[10px] sm:text-xs text-brand-muted uppercase tracking-wider block font-medium">Desde</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$30.000 CLP</span>
+              </div>
+              <span class="price-icon w-8 h-8 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span>
+            </div>
+          </button>
+          
+          <div class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white">
+            
+            <!-- Item: Mancha Facial S -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Mancha Facial S (1 a 3 manchas)</h4>
+                <p class="text-xs text-brand-muted">Tratamiento puntual para lentigos solares o pecas aisladas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$130.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$240.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$30.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Mancha Facial M -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Mancha Facial M (Zona localizada, ej. pómulos)</h4>
+                <p class="text-xs text-brand-muted">Atenuación en áreas medias con pigmentación agrupada.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$210.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$390.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$50.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Rostro Completo -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Rostro Completo (Pigmentación difusa / pecas)</h4>
+                <p class="text-xs text-brand-muted">Unificación integral del tono facial en todo el rostro.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$340.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$620.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$80.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Manchas Manos -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Manchas en Manos (Ambas manos)</h4>
+                <p class="text-xs text-brand-muted">Aclaramiento de lentigos solares o signos de fotoenvejecimiento.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$190.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$340.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$45.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Aclaramiento Zonas Oscuras -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Aclaramiento de Zonas Oscuras (Axilas o Entrepierna)</h4>
+                <p class="text-xs text-brand-muted">Atenuación de hiperpigmentación por roce o depilación.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$190.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$340.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$45.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Marca de Nacimiento / Nevo de Ota -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Marca de Nacimiento / Nevo de Ota</h4>
+                <p class="text-xs text-brand-muted">Protocolo especializado para pigmentaciones dérmicas profundas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$310.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$580.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$75.000 CLP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORÍA 4: CICATRICES, MARCAS Y TEXTURA -->
+        <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
+          <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
+            <div class="space-y-0.5 min-w-0">
+              <h3 class="font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Cicatrices, Marcas y Textura</h3>
+              <p class="text-xs text-brand-muted truncate">Renovación dérmica fraccionada para marcas de acné, cicatrices y estrías</p>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+              <div class="text-right">
+                <span class="text-[10px] sm:text-xs text-brand-muted uppercase tracking-wider block font-medium">Desde</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$70.000 CLP</span>
+              </div>
+              <span class="price-icon w-8 h-8 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span>
+            </div>
+          </button>
+          
+          <div class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white">
+            
+            <!-- Item: Marcas / Cicatrices de Acné -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Marcas / Cicatrices de Acné (Rostro/Mejillas)</h4>
+                <p class="text-xs text-brand-muted">Sonda fraccionada Honeycomb para suavizar bordes y estimular renovación interna.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$310.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$580.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$75.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tratamiento Cicatrices -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tratamiento de Cicatrices (Zona puntual)</h4>
+                <p class="text-xs text-brand-muted">Mejora de flexibilidad, relieve y aspecto visual del tejido cicatrizal.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$290.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$550.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$70.000 CLP</span>
+              </div>
+            </div>
+
+            <!-- Item: Tratamiento Estrías -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Tratamiento de Estrías (Por zona)</h4>
+                <p class="text-xs text-brand-muted">Estímulo regenerativo para atenuar la visibilidad de estrías blancas y rojas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$290.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$550.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$70.000 CLP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- CATEGORÍA 5: OTROS TRATAMIENTOS -->
+        <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
+          <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
+            <div class="space-y-0.5 min-w-0">
+              <h3 class="font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Otros Tratamientos</h3>
+              <p class="text-xs text-brand-muted truncate">Cuidados específicos complementarios</p>
+            </div>
+            <div class="flex items-center gap-3 sm:gap-4 shrink-0">
+              <div class="text-right">
+                <span class="text-[10px] sm:text-xs text-brand-muted uppercase tracking-wider block font-medium">Desde</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$35.000 CLP</span>
+              </div>
+              <span class="price-icon w-8 h-8 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span>
+            </div>
+          </button>
+          
+          <div class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white">
+            
+            <!-- Item: Onicomicosis -->
+            <div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors">
+              <div class="space-y-1">
+                <h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Onicomicosis (Tratamiento hongos en uñas)</h4>
+                <p class="text-xs text-brand-muted">Aplicación térmica láser focalizada para debilitar estructuras fúngicas.</p>
+                <div class="text-xs text-brand-muted pt-0.5 flex flex-wrap gap-x-4 gap-y-1">
+                  <span>Pack 5: <strong class="text-brand-charcoal font-sans">$150.000</strong></span>
+                  <span>Pack 10: <strong class="text-brand-charcoal font-sans">$280.000</strong></span>
+                </div>
+              </div>
+              <div class="sm:text-right shrink-0">
+                <span class="text-[11px] text-brand-muted block">Sesión Individual</span>
+                <span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$35.000 CLP</span>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ===== DISCLAIMER DISCRETO ===== -->
+      <div class="mt-8 p-6 bg-white border border-brand-border rounded-2xl text-center text-xs text-brand-muted leading-relaxed">
+        <p>✨ Los resultados pueden variar según las características individuales de la piel, pigmento y tratamiento realizado. Cada procedimiento está sujeto a evaluación técnica previa para determinar indicaciones, contraindicaciones y parámetros adecuados.</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN AGENDAMIENTO & CALENDLY ===== -->
+  <section id="booking" class="py-24 bg-white border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Agenda Online</span>
+      <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Reserva tu Sesión o Evaluación</h2>
+      <p class="text-sm sm:text-base text-brand-muted font-light max-w-xl mx-auto mb-10">
+        Atención individual y exclusiva en San Fernando con agenda previa. La dirección exacta se envía automáticamente junto con la confirmación de tu cita.
+      </p>
+
+      <div class="bg-brand-cardBg border border-brand-border rounded-3xl p-8 sm:p-12 shadow-sm max-w-2xl mx-auto">
+        <div class="w-16 h-16 rounded-full bg-white border border-brand-border flex items-center justify-center text-2xl text-brand-gold mx-auto mb-6 shadow-xs">
+          📅
+        </div>
+        <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Selecciona tu Día y Hora</h3>
+        <p class="text-xs sm:text-sm text-brand-muted leading-relaxed mb-8">
+          Haz clic en el botón a continuación para abrir nuestro calendario oficial de Calendly y agendar tu horario preferido en segundos.
+        </p>
+
+        <!-- ===== LINK CALENDLY PRINCIPAL ===== -->
+        <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="inline-flex items-center justify-center gap-2 w-full py-4 text-xs sm:text-sm font-semibold uppercase tracking-widest text-white gold-gradient rounded-full hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+          <span>Abrir Calendario de Agendamiento</span>
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path></svg>
+        </a>
+
+        <!-- ===== WHATSAPP DIRECTO ===== -->
+        <div class="mt-6 pt-6 border-t border-brand-border flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-brand-muted">
+          <span>¿Prefieres consultar directamente?</span>
+          <a href="https://wa.me/56926313816" target="_blank" class="font-semibold text-brand-charcoal hover:text-brand-gold flex items-center gap-1.5 transition-colors">
+            <span>Escribir al WhatsApp (+56 9 2631 3816)</span> &rarr;
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN FAQ (ACORDEONES POR CATEGORÍA) ===== -->
+  <section id="faq" class="py-24 bg-brand-goldLight border-t border-brand-border">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Resolución de Dudas</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Preguntas Frecuentes</h2>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Información técnica y recomendaciones para cada uno de nuestros procedimientos.</p>
+      </div>
+
+      <!-- FAQ Tabs -->
+      <div class="flex items-center justify-center gap-2 flex-wrap mb-10">
+        <button onclick="switchTab('general')" id="tab-general" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-brand-charcoal text-white transition-all">General</button>
+        <button onclick="switchTab('hollywood')" id="tab-hollywood" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Hollywood Peel</button>
+        <button onclick="switchTab('tatuajes')" id="tab-tatuajes" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Tatuajes</button>
+        <button onclick="switchTab('acne')" id="tab-acne" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Acné & Textura</button>
+        <button onclick="switchTab('manchas')" id="tab-manchas" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Manchas & Ojeras</button>
+      </div>
+
+      <!-- TAB CONTENT: GENERAL -->
+      <div id="content-general" class="faq-content space-y-4">
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Dónde están ubicados exactamente en San Fernando?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Atendemos en un estudio privado y reservado en San Fernando. Por privacidad, tranquilidad y orden de las citas individuales, la dirección exacta se envía automáticamente junto con la confirmación de tu agendamiento.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cómo se realiza el pago de las sesiones y packs?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Puedes agendar tu hora en línea a través de Calendly y abonar tu sesión en el estudio mediante transferencia electrónica, débito o tarjetas de crédito (con opción de pago en cuotas según las condiciones de tu entidad bancaria).
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Qué tipo de láser utilizan en el estudio?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Utilizamos tecnología Láser Nd:YAG Q-Switched de nivel estético avanzado con emisión en nanosegundos (no es láser diodo de depilación ni luz pulsada convencional), calibrado para el tratamiento selectivo de pigmentos y estímulo de la piel.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Se realiza una evaluación previa antes de comenzar?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Sí. Siempre realizamos una evaluación técnica personalizada de la piel para identificar tus objetivos, revisar antecedentes y calibrar los parámetros adecuados antes de iniciar cualquier sesión.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT: HOLLYWOOD PEEL -->
+      <div id="content-hollywood" class="faq-content hidden space-y-4">
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Es molesto o doloroso el Hollywood Peel?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Es un procedimiento sumamente confortable. Habitualmente solo se percibe una suave sensación de tibieza y el chasquido sonoro del carbón vegetal interactuando con la luz láser.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Requiere tiempo de recuperación o reposo?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            No requiere reposo. Puedes continuar con tus actividades habituales o maquillarte el mismo día, manteniendo las precauciones estándar de hidratación y fotoprotección.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cuántas sesiones se suelen recomendar?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            El aporte de luminosidad y suavidad es perceptible desde la primera sesión. Para mantener el control del brillo graso y poros limpios, se sugiere una mantención periódica o plan de sesiones según tu tipo de piel.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Qué cuidados posteriores son necesarios?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Se recomienda aplicar protector solar SPF 50+ cada 3 horas, mantener una buena hidratación tópica y evitar exfoliantes químicos o mecánicos agresivos en los primeros días.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT: TATUAJES -->
+      <div id="content-tatuajes" class="faq-content hidden space-y-4">
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Qué sensación produce la remoción de un tatuaje?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Produce una sensación de molestia similar al impacto rápido de un elástico sobre la piel. Aplicamos frío local constante para optimizar el confort durante el procedimiento.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Qué ocurre inmediatamente después de la sesión?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            La zona puede presentar un blanqueamiento transitorio (efecto frosting) y un enrojecimiento periférico esperable que va atenuándose en las 24 a 48 horas posteriores.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cuántas sesiones se requieren para atenuar o remover un tatuaje?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            El número total de sesiones es variable según la profundidad de la tinta, densidad, colores empleados, antigüedad y la respuesta metabólica de cada organismo. Las sesiones se espacian entre 4 a 6 semanas.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cuáles son los cuidados de mantención en casa?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Aplicar crema reparadora humectante, no retirar posibles microcostras residuales, evitar inmersión en piscinas o saunas durante los primeros días y evitar la exposición solar directa.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT: ACNE -->
+      <div id="content-acne" class="faq-content hidden space-y-4">
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cómo actúa el láser en marcas y cicatrices de acné?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            La sonda fraccionada Honeycomb entrega micropulsos diseñados para inducir una respuesta de renovación tisular progresiva, contribuyendo a suavizar la textura irregular de la piel.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Presenta enrojecimiento o descamación?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Es normal observar un enrojecimiento moderado las primeras 24 a 48 horas y, en ciertos casos, una descamación sutil los días siguientes como parte del proceso de renovación superficial.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cuántas sesiones se recomiendan para textura?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Al ser un estímulo progresivo de renovación dérmica, se estructura usualmente en planes de varias sesiones espaciadas cada 21 a 30 días, evaluando la evolución en cada cita.
+          </div>
+        </div>
+      </div>
+
+      <!-- TAB CONTENT: MANCHAS Y OJERAS -->
+      <div id="content-manchas" class="faq-content hidden space-y-4">
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Qué expectativas debo tener con las ojeras?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            El protocolo busca atenuar y aclarar el tono marrón asociado a la acumulación de pigmento (melanina). No modifica surcos anatómicos estructurales pero mejora la luminosidad del contorno.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Cómo se cuida la zona periocular durante la sesión?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Se utiliza protección ocular opaca especializada y se aplican intensidades suaves trabajando exclusivamente sobre la piel apoyada en el reborde óseo periocular.
+          </div>
+        </div>
+        <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
+          <button onclick="toggleAccordion(this)" class="w-full p-6 text-left flex items-center justify-between font-serif text-lg font-medium text-brand-charcoal">
+            <span>¿Las manchas solares pueden cambiar de tono tras la sesión?</span>
+            <span class="text-brand-gold text-xl transition-transform">+</span>
+          </button>
+          <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
+            Sí, es habitual que la mancha adquiera un tono ligeramente más oscuro durante los primeros días antes de que el pigmento fragmentado se desprenda de forma sutil y paulatina.
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== SECCIÓN INSTAGRAM (FEED LOCAL 6 FOTOS) ===== -->
+  <section class="py-20 bg-white border-t border-brand-border">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+      <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Comunidad</span>
+      <h2 class="font-serif text-3xl sm:text-4xl font-light text-brand-charcoal mt-2 mb-4">Síguenos en @dermiclaser.studio</h2>
+      <p class="text-sm text-brand-muted mb-10 max-w-md mx-auto">Revisa el detrás de escena, resultados de tratamientos y novedades de nuestro estudio privado en San Fernando.</p>
+      
+      <!-- Grilla 6 fotos Instagram (3x2 en móvil/tablet, 6x1 en desktop) -->
+      <div class="grid grid-cols-3 lg:grid-cols-6 gap-3 sm:gap-4 mb-10">
+        
+        <!-- INSTAGRAM FOTO 1 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-01.webp" alt="Instagram Dermic Láser 1" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM FOTO 2 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-02.webp" alt="Instagram Dermic Láser 2" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM FOTO 3 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-03.webp" alt="Instagram Dermic Láser 3" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM FOTO 4 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-04.webp" alt="Instagram Dermic Láser 4" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM FOTO 5 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-05.webp" alt="Instagram Dermic Láser 5" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+        <!-- INSTAGRAM FOTO 6 -->
+        <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="group relative aspect-square rounded-xl overflow-hidden border border-brand-border/70 bg-slate-100 shadow-2xs block">
+          <img src="images/instagram-06.webp" alt="Instagram Dermic Láser 6" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+          <div class="absolute inset-0 bg-brand-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center">
+            <span class="text-white text-[10px] sm:text-xs font-semibold uppercase tracking-wider bg-black/40 px-2 py-1 rounded-full backdrop-blur-xs">Ver</span>
+          </div>
+        </a>
+
+      </div>
+      
+      <!-- ===== BOTÓN INSTAGRAM ===== -->
+      <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="inline-flex items-center gap-2 px-6 py-3 bg-brand-cardBg border border-brand-border rounded-full text-xs font-semibold uppercase tracking-wider text-brand-charcoal hover:border-brand-gold transition-all">
+        <span>Visitar Perfil de Instagram</span> &rarr;
+      </a>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO & FOOTER ===== -->
+  <footer id="contacto" class="bg-brand-charcoal text-white pt-16 pb-12 border-t border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-10 pb-12 border-b border-slate-800">
+        
+        <!-- Bloque Marca con Logo Discreto -->
+        <div>
+          <div class="flex items-center gap-3 mb-3">
+            <img src="images/logo-dermic-laser.webp" alt="Logo Dermic Láser" class="w-9 h-9 rounded-lg object-contain bg-white/10 p-0.5 border border-white/20">
+            <span class="font-serif text-xl font-semibold tracking-wider text-white">DERMIC LÁSER</span>
+          </div>
+          <p class="text-[10px] uppercase tracking-[0.2em] text-brand-gold font-medium mb-4">Private Studio · San Fernando</p>
+          <p class="text-xs text-slate-400 leading-relaxed">
+            Tratamientos estéticos avanzados con tecnología Láser Nd:YAG Q-Switched no invasiva y protocolos personalizados con reserva previa.
+          </p>
+        </div>
+
+        <!-- Bloque Contacto -->
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-slate-300 mb-4">Contacto Directo</h4>
+          <ul class="space-y-2 text-xs text-slate-400">
+            <li>📍 San Fernando, Región de O'Higgins, Chile</li>
+            <li>📲 WhatsApp: <a href="https://wa.me/56926313816" target="_blank" class="text-brand-gold hover:underline">+56 9 2631 3816</a></li>
+            <li>📸 Instagram: <a href="https://www.instagram.com/dermiclaser.studio" target="_blank" class="text-brand-gold hover:underline">@dermiclaser.studio</a></li>
+            <li>📅 Agenda tu cita: <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="text-brand-gold hover:underline">Calendly Online</a></li>
+          </ul>
+        </div>
+
+        <!-- Bloque Atención & Reserva -->
+        <div>
+          <h4 class="text-xs font-semibold uppercase tracking-widest text-slate-300 mb-4">Atención & Reserva</h4>
+          <p class="text-xs text-slate-400 leading-relaxed mb-4">
+            Atención individual en estudio privado. La dirección exacta se envía junto con la confirmación de la cita.
+          </p>
+          <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="inline-block px-5 py-2.5 text-xs font-semibold uppercase tracking-wider text-brand-charcoal bg-white rounded-full hover:bg-brand-goldLight transition-all">
+            Agendar Evaluación
+          </a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-slate-500 gap-4">
+        <p>© 2026 Dermic Láser Private Studio. Todos los derechos reservados.</p>
+        <p>San Fernando, Región de O'Higgins, Chile</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPT DE COMPORTAMIENTO (MENU MÓVIL, TABS FAQ Y ACORDEÓN DE PRECIOS INDEPENDIENTE) ===== -->
+  <script>
+    function toggleMobileMenu() {
+      const menu = document.getElementById('mobileMenu');
+      menu.classList.toggle('hidden');
+    }
+    document.getElementById('mobileMenuBtn').addEventListener('click', toggleMobileMenu);
+
+    /* Lógica independiente para Acordeones del Tarifario V4 */
+    function togglePriceAccordion(button) {
+      const parentAccordion = button.closest('.price-accordion');
+      const content = parentAccordion.querySelector('.price-content');
+      const icon = button.querySelector('.price-icon');
+      const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+      // Cerrar todos los acordeones de precios abiertos
+      document.querySelectorAll('.price-accordion').forEach(acc => {
+        const btn = acc.querySelector('button');
+        const cnt = acc.querySelector('.price-content');
+        const icn = acc.querySelector('.price-icon');
+
+        btn.setAttribute('aria-expanded', 'false');
+        cnt.classList.add('hidden');
+        icn.textContent = '+';
+        icn.style.transform = 'rotate(0deg)';
+      });
+
+      // Si el seleccionado estaba cerrado, abrirlo
+      if (!isExpanded) {
+        button.setAttribute('aria-expanded', 'true');
+        content.classList.remove('hidden');
+        icon.textContent = '−';
+        icon.style.transform = 'rotate(180deg)';
+      }
+    }
+
+    /* Lógica independiente para Tabs de FAQ */
+    function switchTab(tabId) {
+      document.querySelectorAll('.faq-tab').forEach(btn => {
+        btn.classList.remove('bg-brand-charcoal', 'text-white');
+        btn.classList.add('bg-white', 'text-brand-muted', 'border', 'border-brand-border');
+      });
+      const activeBtn = document.getElementById('tab-' + tabId);
+      if (activeBtn) {
+        activeBtn.classList.remove('bg-white', 'text-brand-muted', 'border', 'border-brand-border');
+        activeBtn.classList.add('bg-brand-charcoal', 'text-white');
+      }
+
+      document.querySelectorAll('.faq-content').forEach(content => {
+        content.classList.add('hidden');
+      });
+      const targetContent = document.getElementById('content-' + tabId);
+      if (targetContent) {
+        targetContent.classList.remove('hidden');
+      }
+    }
+
+    /* Lógica independiente para Acordeones internos de FAQ */
+    function toggleAccordion(button) {
+      const content = button.nextElementSibling;
+      const icon = button.querySelector('span:last-child');
+      const isHidden = content.classList.contains('hidden');
+      
+      content.classList.toggle('hidden');
+      if (isHidden) {
+        icon.textContent = '−';
+        icon.style.transform = 'rotate(180deg)';
+      } else {
+        icon.textContent = '+';
+        icon.style.transform = 'rotate(0deg)';
+      }
+    }
+  </script>
+</body>
+</html>
