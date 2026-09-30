@@ -84,25 +84,30 @@ instagram-06.webp
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
-    /* Fondo del estudio: un archivo, encuadre adaptable y velo de lectura. */
+    /* Foto del estudio: ventana visible y encuadre independiente del largo del texto. */
     .hero-studio-photo {
       position: absolute;
       inset: 0;
       width: 100%;
-      height: 100%;
+      height: clamp(620px, 155vw, 1000px);
+      max-height: 100%;
       object-fit: cover;
-      object-position: 58% 55%;
+      object-position: left center;
       pointer-events: none;
     }
     .hero-studio-veil {
       position: absolute;
       inset: 0;
-      background: linear-gradient(180deg, rgba(253,251,247,.82) 0%, rgba(255,255,255,.86) 45%, rgba(255,255,255,.78) 78%, #fff 100%);
+      height: clamp(620px, 155vw, 1000px);
+      max-height: 100%;
+      background: linear-gradient(180deg, rgba(253,251,247,.72) 0%, rgba(255,255,255,.78) 22%, rgba(255,255,255,.84) 58%, rgba(255,255,255,.93) 82%, #fff 100%);
       pointer-events: none;
     }
+    .hero-studio { background-color: #fff; }
     @media (min-width: 768px) {
-      .hero-studio-photo { object-position: center 58%; }
+      .hero-studio-photo { height: 100%; object-position: center 40%; }
       .hero-studio-veil {
+        height: 100%;
         background: linear-gradient(180deg, rgba(253,251,247,.60) 0%, rgba(255,255,255,.80) 35%, rgba(255,255,255,.84) 65%, #fff 100%);
       }
     }
@@ -466,7 +471,7 @@ instagram-06.webp
 
   <!-- ===== HERO PRINCIPAL ===== -->
   <section class="hero-studio relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-brand-goldLight">
-    <img src="images/estudio-dermic-hero.png" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1086" height="1448" class="hero-studio-photo">
+    <img src="images/estudio-dermic-hero.png?v=2" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1086" height="1448" class="hero-studio-photo">
     <div class="hero-studio-veil" aria-hidden="true"></div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-border shadow-xs text-xs font-medium text-brand-charcoal mb-8">
