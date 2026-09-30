@@ -111,6 +111,33 @@ instagram-06.webp
         background: linear-gradient(180deg, rgba(253,251,247,.60) 0%, rgba(255,255,255,.80) 35%, rgba(255,255,255,.84) 65%, #fff 100%);
       }
     }
+    /* Contraste del hero: velo localizado y tipografía más definida. */
+    .hero-studio > .relative.z-10::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: 36px -12px 22%;
+      background: radial-gradient(ellipse at 50% 38%, rgba(255,255,255,.88) 0%, rgba(255,255,255,.72) 48%, rgba(255,255,255,0) 76%);
+      pointer-events: none;
+    }
+    .hero-studio h1 { font-weight: 500; }
+    .hero-studio h1 .text-gold-gradient {
+      background: none;
+      color: #80613A;
+      -webkit-text-fill-color: #80613A;
+      font-weight: 500;
+    }
+    .hero-studio h1 + p {
+      color: #334155;
+      font-weight: 400;
+      text-shadow: 0 1px 8px rgba(255,255,255,.65);
+    }
+    @media (min-width: 768px) {
+      .hero-studio > .relative.z-10::before {
+        inset: 10px -8% 20%;
+        background: radial-gradient(ellipse at 50% 40%, rgba(255,255,255,.90) 0%, rgba(255,255,255,.72) 48%, rgba(255,255,255,0) 76%);
+      }
+    }
   </style>
     <!-- ===== DATOS ESTRUCTURADOS ===== -->
   <script type="application/ld+json">
