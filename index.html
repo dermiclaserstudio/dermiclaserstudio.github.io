@@ -24,11 +24,14 @@ instagram-06.webp
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <!-- SEO & OPEN GRAPH -->
-  <meta property="og:title" content="Dermic Láser Private Studio | San Fernando">
-  <meta property="og:description" content="Estudio privado en San Fernando especializado en Hollywood Peel, remoción de tatuajes, manchas, ojeras y tratamientos estéticos avanzados con tecnología láser Nd:YAG Q-Switched.">
+  <meta property="og:title" content="Dermic Láser | Depilación Láser y Tratamientos en San Fernando">
+  <meta property="og:description" content="Depilación láser Sopramax Cuatri Láser y tratamientos Nd:YAG en San Fernando: tatuajes, microblading, Hollywood Peel y manchas. Atención privada con reserva.">
   <meta property="og:type" content="website">
-  <title>Dermic Láser | Borrado de Tatuajes y Tratamientos Láser en San Fernando</title>
-  <meta name="description" content="Dermic Láser Private Studio en San Fernando. Borrado de tatuajes y microblading, Hollywood Peel, eliminación de manchas, ojeras y rejuvenecimiento con tecnología láser Nd:YAG.">
+  <meta property="og:url" content="https://dermiclaserstudio.github.io/">
+  <meta property="og:locale" content="es_CL">
+  <meta property="og:site_name" content="Dermic Láser Private Studio">
+  <title>Dermic Láser | Depilación Láser y Tratamientos en San Fernando</title>
+  <meta name="description" content="Depilación láser Sopramax Cuatri Láser y tratamientos Nd:YAG en San Fernando: tatuajes, microblading, Hollywood Peel y manchas. Atención privada con reserva.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://dermiclaserstudio.github.io/">
   
@@ -81,6 +84,28 @@ instagram-06.webp
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
+    /* Fondo del estudio: un archivo, encuadre adaptable y velo de lectura. */
+    .hero-studio-photo {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 58% 55%;
+      pointer-events: none;
+    }
+    .hero-studio-veil {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(253,251,247,.82) 0%, rgba(255,255,255,.86) 45%, rgba(255,255,255,.78) 78%, #fff 100%);
+      pointer-events: none;
+    }
+    @media (min-width: 768px) {
+      .hero-studio-photo { object-position: center 58%; }
+      .hero-studio-veil {
+        background: linear-gradient(180deg, rgba(253,251,247,.60) 0%, rgba(255,255,255,.80) 35%, rgba(255,255,255,.84) 65%, #fff 100%);
+      }
+    }
   </style>
     <!-- ===== DATOS ESTRUCTURADOS ===== -->
   <script type="application/ld+json">
@@ -92,7 +117,7 @@ instagram-06.webp
   "url": "https://dermiclaserstudio.github.io/",
   "logo": "https://dermiclaserstudio.github.io/images/logo-dermic-laser.webp",
   "image": "https://dermiclaserstudio.github.io/images/og-dermic-laser.webp",
-  "description": "Estudio especializado en tratamientos estéticos con tecnología láser Nd:YAG en San Fernando, Región de O'Higgins. Borrado de tatuajes y microblading, Hollywood Peel, tratamiento de manchas, ojeras, cicatrices y rejuvenecimiento facial.",
+  "description": "Depilación láser Sopramax Cuatri Láser y tratamientos Nd:YAG en San Fernando: tatuajes, microblading, Hollywood Peel y manchas. Atención privada con reserva.",
   "telephone": "+56926313816",
   "address": {
     "@type": "PostalAddress",
@@ -111,6 +136,18 @@ instagram-06.webp
     "@type": "OfferCatalog",
     "name": "Tratamientos Dermic Láser",
     "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser Sopramax Cuatri Láser",
+          "description": "Depilación facial y corporal con 755, 808, 940 y 1064 nm en un haz, spot de zafiro y enfriamiento. Zonas XS a XL y packs de 6 sesiones.",
+          "areaServed": {
+            "@type": "City",
+            "name": "San Fernando"
+          }
+        }
+      },
       {
         "@type": "Offer",
         "itemOffered": {
@@ -152,9 +189,227 @@ instagram-06.webp
           "@type": "Service",
           "name": "Tratamiento de cicatrices y marcas de acné"
         }
+      },
+      {
+        "@type": "Offer",
+        "price": "12990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona XS · Sesión individual, una zona",
+          "description": "Bozo, mentón, patillas, línea alba o dedos de manos/pies. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "59990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona XS · Pack 6 sesiones, una zona",
+          "description": "Bozo, mentón, patillas, línea alba o dedos de manos/pies. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "16990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona S · Sesión individual, una zona",
+          "description": "Axilas o cuello anterior o posterior (cada sector del cuello es una zona). Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "69990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona S · Pack 6 sesiones, una zona",
+          "description": "Axilas o cuello anterior o posterior (cada sector del cuello es una zona). Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "24990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona M · Sesión individual, una zona",
+          "description": "Pubis externo femenino (monte de Venus), medio rostro, rostro completo, medio brazo, hombros, espalda superior, lumbar o abdomen. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "109990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona M · Pack 6 sesiones, una zona",
+          "description": "Pubis externo femenino (monte de Venus), medio rostro, rostro completo, medio brazo, hombros, espalda superior, lumbar o abdomen. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "32990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona L · Sesión individual, una zona",
+          "description": "Brazos completos, media pierna (sector inferior o muslos), glúteos externos o pecho. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "149990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona L · Pack 6 sesiones, una zona",
+          "description": "Brazos completos, media pierna (sector inferior o muslos), glúteos externos o pecho. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "44990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona XL · Sesión individual, una zona",
+          "description": "Piernas completas, espalda completa o pecho + abdomen. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "189990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#precios-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser zona XL · Pack 6 sesiones, una zona",
+          "description": "Piernas completas, espalda completa o pecho + abdomen. Una zona a elección; sujeto a evaluación."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "109990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#packs-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser · Pack Esencial",
+          "description": "Axilas + bozo. 6 sesiones de cada zona incluida."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "229990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#packs-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser · Pack Piernas + axilas",
+          "description": "Piernas completas + axilas. 6 sesiones de cada zona incluida."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "299990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#packs-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser · Pack Full Smooth",
+          "description": "Piernas completas + axilas + pubis externo femenino (monte de Venus). 6 sesiones de cada zona incluida."
+        }
+      },
+      {
+        "@type": "Offer",
+        "price": "279990",
+        "priceCurrency": "CLP",
+        "url": "https://dermiclaserstudio.github.io/#packs-depilacion",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Depilación láser · Pack Torso",
+          "description": "Pecho + espalda completa. 6 sesiones de cada zona incluida."
+        }
       }
     ]
   }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "¿Qué tecnología utilizan para depilación láser?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Trabajamos con Sopramax Cuatri Láser: 755, 808, 940 y 1064 nm combinados en un haz, con spot de zafiro y enfriamiento. Es el equipo destinado a depilación; los tratamientos de pigmentos y tatuajes se realizan con Nd:YAG Q-Switched."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo debo prepararme para la sesión?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Escríbenos por WhatsApp para la preevaluación y las indicaciones de tu zona. Evita el bronceado y los autobronceantes; protege la piel del sol. No extraigas el vello con cera o pinzas antes del tratamiento. Te indicaremos cuándo rasurar la zona. Informa sobre medicamentos, tratamientos de piel y exposición solar reciente; no suspendas medicación por tu cuenta."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cuántas sesiones necesito y cada cuánto se realizan?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El número y el intervalo se definen según la zona, las características del vello y la respuesta individual. Los packs publicados incluyen 6 sesiones por zona; ese formato no garantiza que el tratamiento finalice en seis sesiones. Puede requerirse mantención."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿La depilación es indolora y elimina todo el vello?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "La sensación y la respuesta varían entre personas y zonas. El cabezal incorpora enfriamiento, pero no prometemos ausencia de molestias ni eliminación total del vello. Evaluamos tu piel y vello antes de indicar el tratamiento."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué incluye cada categoría y qué zonas íntimas atienden?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "El precio XS, S, M, L o XL corresponde a una zona a elección de esa categoría. En zona púbica solo atendemos pubis externo femenino (monte de Venus). No incluye rebaje completo, genitales, mucosas, periné ni interglúteo."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Qué cuidados debo seguir después?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Sigue las indicaciones entregadas para tu zona, protege la piel del sol y evita broncearte. Consulta al estudio si tienes dudas sobre la evolución o molestias persistentes. Los cuidados de depilación son distintos de los de remoción de tatuajes."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "¿Cómo puedo reservar?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Puedes solicitar tu preevaluación y reservar por WhatsApp, o agendar mediante nuestro enlace de Calendly. Antes de comenzar confirmamos la zona, el plan elegido y las indicaciones de preparación."
+      }
+    }
+  ]
 }
 </script>
 </head>
@@ -210,20 +465,22 @@ instagram-06.webp
   </header>
 
   <!-- ===== HERO PRINCIPAL ===== -->
-  <section class="relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-gradient-to-b from-brand-goldLight via-white to-white">
-    <div class="max-w-5xl mx-auto px-4 sm:px-6 text-center">
+  <section class="hero-studio relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-brand-goldLight">
+    <img src="images/estudio-dermic-hero.png" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1086" height="1448" class="hero-studio-photo">
+    <div class="hero-studio-veil" aria-hidden="true"></div>
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
       <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-white border border-brand-border shadow-xs text-xs font-medium text-brand-charcoal mb-8">
         <span class="w-2 h-2 rounded-full bg-brand-gold animate-pulse"></span>
-        Tecnología Láser Nd:YAG Q-Switched en San Fernando
+        Depilación Láser · Tratamientos Nd:YAG · San Fernando
       </div>
 
       <h1 class="font-serif text-4xl sm:text-6xl md:text-7xl font-light text-brand-charcoal tracking-tight leading-[1.1] mb-6">
-        Dermic Laser Studio <br class="hidden sm:inline"/>
-        <span class="italic font-normal text-gold-gradient">Remoción Tatuajes, Manchas y Rejuvenecimiento con  Láser de Precisión</span>
+        Dermic Láser Studio <br class="hidden sm:inline"/>
+        <span class="italic font-normal text-gold-gradient">Depilación Láser y Cuidado de tu Piel</span>
       </h1>
 
       <p class="max-w-2xl mx-auto text-base sm:text-lg text-brand-muted font-light leading-relaxed mb-10">
-        Tratamientos estéticos especializados, no invasivos y protocolos personalizados en un estudio privado diseñado para brindarte total confort, reserva y resultados progresivos.
+        Depilación con Sopramax Cuatri Láser, remoción de tatuajes y tratamientos de manchas y rejuvenecimiento con Nd:YAG. Atención personalizada en un estudio privado en San Fernando, con evaluación previa y reserva.
       </p>
 
       <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -252,8 +509,8 @@ instagram-06.webp
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-brand-charcoal">Tecnología Fotoacústica</h4>
-            <p class="text-xs text-brand-muted">Pulsos en nanosegundos no invasivos.</p>
+            <h4 class="text-sm font-semibold text-brand-charcoal">Dos Tecnologías Láser</h4>
+            <p class="text-xs text-brand-muted">Cuatri Láser para depilación y Nd:YAG para piel y pigmentos.</p>
           </div>
         </div>
         <div class="flex items-center gap-3">
@@ -261,25 +518,39 @@ instagram-06.webp
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
           </div>
           <div>
-            <h4 class="text-sm font-semibold text-brand-charcoal">Evaluación Incluida</h4>
-            <p class="text-xs text-brand-muted">Evaluación técnica y personalizada de piel.</p>
+            <h4 class="text-sm font-semibold text-brand-charcoal">Preevaluación por WhatsApp</h4>
+            <p class="text-xs text-brand-muted">Consulta por tu zona y tratamiento antes de reservar.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ===== SERVICIOS (6 CARDS PRINCIPALES) ===== -->
+  <!-- ===== SERVICIOS: DEPILACIÓN Y TRATAMIENTOS ND:YAG ===== -->
   <section id="servicios" class="py-24 bg-white border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Catálogo Especializado</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Tratamientos Especializados</h2>
-        <p class="text-sm sm:text-base text-brand-muted font-light">Tratamientos estéticos avanzados diseñados para aportar luminosidad, mejorar la textura y el cuidado armónico de tu piel.</p>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Depilación facial y corporal, remoción de tatuajes y tratamientos estéticos para el cuidado de tu piel. Cada servicio se indica según evaluación.</p>
       </div>
 
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
         
+        <!-- Depilación: misma línea visual de las tarjetas existentes -->
+        <div id="depilacion" class="md:col-span-2 lg:col-span-3 bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col md:flex-row md:items-center gap-8">
+          <div class="flex-1 min-w-0">
+            <p class="text-xs uppercase tracking-wider text-brand-gold font-semibold mb-4">Sopramax Cuatri Láser</p>
+            <h3 class="font-serif text-2xl font-medium text-brand-charcoal mb-2">Depilación Láser Facial y Corporal</h3>
+            <p class="text-sm text-brand-muted leading-relaxed">Cuatro longitudes de onda —755, 808, 940 y 1064 nm— en un haz, con spot de zafiro y enfriamiento. Zonas XS a XL y packs de 6 sesiones, sujetos a evaluación de piel y vello.</p>
+          </div>
+          <div class="border-t md:border-t-0 md:border-l border-brand-border pt-6 md:pt-0 md:pl-8 md:shrink-0">
+            <span class="text-xs text-brand-muted block">Una zona XS · sesión individual</span>
+            <span class="text-lg font-semibold text-brand-charcoal block mb-4">Desde $12.990 CLP</span>
+            <a href="#precios" class="text-xs font-semibold uppercase tracking-wider text-brand-gold hover:text-brand-goldHover">Ver zonas y packs &rarr;</a>
+          </div>
+        </div>
+
         <!-- Card 1: Hollywood Peel -->
         <div class="bg-brand-cardBg border border-brand-border rounded-2xl p-8 hover:border-brand-gold transition-all hover:shadow-md flex flex-col justify-between">
           <div>
@@ -410,60 +681,64 @@ instagram-06.webp
     </div>
   </section>
 
-  <!-- ===== SECCIÓN TECNOLOGÍA ===== -->
+  <!-- ===== SECCIÓN TECNOLOGÍA: DOS EQUIPOS, MISMA JERARQUÍA ===== -->
   <section id="tecnologia" class="py-24 bg-brand-goldLight border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-        <div>
-          <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Ciencia & Precisión</span>
-          <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-6">
-            Láser Nd:YAG Q-Switched: <br/>
-            <span class="italic text-brand-gold">Efecto Fotoacústico</span>
-          </h2>
-          <p class="text-brand-muted text-base leading-relaxed mb-6">
-            Nuestra tecnología emite pulsos ultracortos en nanosegundos diseñados para concentrar la energía de forma selectiva sobre la diana a tratar (pigmento o partículas de tinta).
-          </p>
-          <p class="text-brand-muted text-base leading-relaxed mb-8">
-            Este efecto fotoacústico busca fragmentar las partículas cromóforas en microelementos más pequeños para que el propio organismo pueda facilitar su eliminación paulatina, minimizando el calentamiento excesivo de la piel adyacente.
-          </p>
+      <div class="text-center max-w-2xl mx-auto mb-12">
+        <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Tecnología para cada tratamiento</span>
+        <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Dos tecnologías.<br><span class="italic text-brand-gold">Un cuidado personalizado.</span></h2>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Contamos con dos equipos diferentes: uno para depilación láser y otro para tratamientos de piel y pigmentos.</p>
+      </div>
 
-          <div class="space-y-4">
-            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
-              <div class="text-brand-gold text-lg mt-0.5">⚡</div>
-              <div>
-                <h4 class="text-sm font-semibold text-brand-charcoal">Pulsos de Alta Velocidad</h4>
-                <p class="text-xs text-brand-muted">Emisión en nanosegundos para un estímulo selectivo y controlado.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
-              <div class="text-brand-gold text-lg mt-0.5">🎯</div>
-              <div>
-                <h4 class="text-sm font-semibold text-brand-charcoal">Longitudes de Onda Específicas</h4>
-                <p class="text-xs text-brand-muted">1064 nm, 532 nm y sonda fraccionada Honeycomb para diferentes requerimientos estéticos.</p>
-              </div>
-            </div>
-            <div class="flex items-start gap-4 p-4 bg-white rounded-xl border border-brand-border shadow-xs">
-              <div class="text-brand-gold text-lg mt-0.5">🌿</div>
-              <div>
-                <h4 class="text-sm font-semibold text-brand-charcoal">Recuperación Confortable</h4>
-                <p class="text-xs text-brand-muted">Procedimientos no invasivos con protocolos orientados a un rápido retorno a la rutina.</p>
-              </div>
-            </div>
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 items-stretch">
+        <article aria-labelledby="tecnologia-sopramax" class="min-w-0 bg-white border border-brand-border rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm flex flex-col">
+          <div class="pb-6 border-b border-brand-border">
+            <p class="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold mb-3">Depilación facial y corporal</p>
+            <h3 id="tecnologia-sopramax" class="font-serif text-3xl sm:text-4xl font-medium text-brand-charcoal leading-tight">Sopramax<br><span class="italic text-brand-gold">Cuatri Láser</span></h3>
           </div>
-        </div>
+          <p class="text-base text-brand-muted leading-relaxed my-6">Equipo destinado a la depilación láser, con cuatro longitudes de onda combinadas en un haz y un cabezal con enfriamiento.</p>
+          <dl class="space-y-5 mt-auto">
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Cuatro longitudes de onda</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">755, 808, 940 y 1064 nm en un haz.</dd>
+            </div>
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Spot de zafiro con enfriamiento</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">Integrado en el cabezal de depilación.</dd>
+            </div>
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Aplicaciones</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">Depilación por zonas faciales y corporales, previa evaluación de piel y vello.</dd>
+            </div>
+          </dl>
+        </article>
 
-        <div class="bg-white border border-brand-border rounded-3xl p-8 sm:p-10 shadow-sm flex flex-col justify-center items-center text-center">
-          <div class="w-20 h-20 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-3xl text-brand-gold mb-6">
-            🔬
+        <article aria-labelledby="tecnologia-ndyag" class="min-w-0 bg-white border border-brand-border rounded-3xl p-6 sm:p-8 lg:p-10 shadow-sm flex flex-col">
+          <div class="pb-6 border-b border-brand-border">
+            <p class="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold mb-3">Tratamientos de piel y pigmentos</p>
+            <h3 id="tecnologia-ndyag" class="font-serif text-3xl sm:text-4xl font-medium text-brand-charcoal leading-tight">Láser Nd:YAG<br><span class="italic text-brand-gold">Q-Switched</span></h3>
           </div>
-          <h3 class="font-serif text-3xl font-medium text-brand-charcoal mb-4">¿Cómo actúa en tu piel?</h3>
-          <p class="text-sm text-brand-muted leading-relaxed max-w-md mb-8">
-            La emisión lumínica interactúa con el pigmento específico. Tras su fragmentación mecánica, se estimula la renovación superficial y la respuesta biológica de depuración natural de la piel.
-          </p>
-          <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-white gold-gradient rounded-full hover:shadow-md transition-all">
-            Agendar Evaluación Técnica
-          </a>
-        </div>
+          <p class="text-base text-brand-muted leading-relaxed my-6">Equipo destinado a tratamientos de piel y pigmentos, con pulsos en nanosegundos y efecto fotoacústico sobre la tinta y el pigmento.</p>
+          <dl class="space-y-5 mt-auto">
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Longitudes de onda</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">1064 y 532 nm para diferentes aplicaciones.</dd>
+            </div>
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Pulsos en nanosegundos</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">Equipo con sonda fraccionada Honeycomb.</dd>
+            </div>
+            <div>
+              <dt class="text-sm font-semibold text-brand-charcoal mb-1">Aplicaciones</dt>
+              <dd class="text-sm text-brand-muted leading-relaxed">Tatuajes, microblading, Hollywood Peel, pigmentación y textura, según evaluación.</dd>
+            </div>
+          </dl>
+        </article>
+      </div>
+
+      <div class="text-center mt-10">
+        <p class="text-sm text-brand-muted leading-relaxed mb-6">La tecnología y los parámetros se seleccionan según el tratamiento y tu evaluación previa.</p>
+        <a href="https://calendly.com/dermiclaser-studio/agendamiento" target="_blank" class="inline-flex items-center justify-center max-w-full px-6 sm:px-8 py-3.5 text-xs font-semibold uppercase tracking-widest text-white gold-gradient rounded-full hover:shadow-md transition-all">Agendar Evaluación Técnica</a>
       </div>
     </div>
   </section>
@@ -525,11 +800,13 @@ instagram-06.webp
       <div class="text-center max-w-2xl mx-auto mb-16">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Tarifario Transparente</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Valores y Planes de Tratamiento</h2>
-        <p class="text-sm sm:text-base text-brand-muted font-light">Tarifas por sesión individual y valores promocionales en Packs de 5 y 10 sesiones con opción de cuotas.</p>
+        <p class="text-sm sm:text-base text-brand-muted font-light">Depilación láser: sesión individual, packs de 6 sesiones por zona y combinaciones. Tratamientos Nd:YAG: sesión individual y packs de 5 y 10 sesiones. Valores en pesos chilenos (CLP).</p>
       </div>
 
       <div class="space-y-4">
 
+<div id="precios-depilacion" class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60"><button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" aria-controls="precios-depilacion-content" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors"><span class="min-w-0"><span class="block font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Depilación Láser · Zonas XS a XL</span><span class="block text-sm text-brand-muted mt-1">Sopramax Cuatri Láser · desde $12.990 por sesión</span></span><span class="price-icon w-8 h-8 shrink-0 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span></button><div id="precios-depilacion-content" class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white"><p class="p-4 sm:p-5 text-sm text-brand-muted leading-relaxed">Cada valor corresponde a <strong class="text-brand-charcoal">una zona a elección</strong> dentro de la categoría; no incluye todas las zonas enumeradas. El pack incluye 6 sesiones de esa misma zona.</p><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Zona XS</h4><p class="text-sm text-brand-muted">Bozo, mentón, patillas, línea alba o dedos de manos/pies.</p><p class="text-sm text-brand-muted">Pack 6, una zona: <strong class="text-brand-charcoal">$59.990 CLP</strong></p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Sesión · una zona</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$12.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Zona S</h4><p class="text-sm text-brand-muted">Axilas o cuello anterior o posterior (cada sector del cuello es una zona).</p><p class="text-sm text-brand-muted">Pack 6, una zona: <strong class="text-brand-charcoal">$69.990 CLP</strong></p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Sesión · una zona</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$16.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Zona M</h4><p class="text-sm text-brand-muted">Pubis externo femenino (monte de Venus), medio rostro, rostro completo, medio brazo, hombros, espalda superior, lumbar o abdomen.</p><p class="text-sm text-brand-muted">Pack 6, una zona: <strong class="text-brand-charcoal">$109.990 CLP</strong></p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Sesión · una zona</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$24.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Zona L</h4><p class="text-sm text-brand-muted">Brazos completos, media pierna (sector inferior o muslos), glúteos externos o pecho.</p><p class="text-sm text-brand-muted">Pack 6, una zona: <strong class="text-brand-charcoal">$149.990 CLP</strong></p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Sesión · una zona</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$32.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Zona XL</h4><p class="text-sm text-brand-muted">Piernas completas, espalda completa o pecho + abdomen.</p><p class="text-sm text-brand-muted">Pack 6, una zona: <strong class="text-brand-charcoal">$189.990 CLP</strong></p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Sesión · una zona</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$44.990 CLP</span></div></div><p class="p-4 sm:p-5 text-sm text-brand-muted leading-relaxed">Pubis: solo zona externa femenina (monte de Venus). No realizamos rebaje completo ni depilación de genitales, mucosas, periné o zona interglútea. Rostro y demás zonas sujetos a evaluación.</p></div></div>
+        <div id="packs-depilacion" class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60"><button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" aria-controls="packs-depilacion-content" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors"><span class="min-w-0"><span class="block font-serif text-xl sm:text-2xl font-medium text-brand-charcoal tracking-tight">Depilación Láser · Packs Combinados</span><span class="block text-sm text-brand-muted mt-1">6 sesiones por zona · valores regulares</span></span><span class="price-icon w-8 h-8 shrink-0 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold text-lg font-medium transition-transform duration-300">+</span></button><div id="packs-depilacion-content" class="price-content hidden border-t border-brand-border/60 divide-y divide-brand-border/60 bg-white"><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Pack Esencial</h4><p class="text-sm text-brand-muted">Axilas + bozo</p><p class="text-xs text-brand-muted">6 sesiones de cada zona incluida</p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Valor total del pack</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$109.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Pack Piernas + axilas</h4><p class="text-sm text-brand-muted">Piernas completas + axilas</p><p class="text-xs text-brand-muted">6 sesiones de cada zona incluida</p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Valor total del pack</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$229.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Pack Full Smooth</h4><p class="text-sm text-brand-muted">Piernas completas + axilas + pubis externo femenino (monte de Venus)</p><p class="text-xs text-brand-muted">6 sesiones de cada zona incluida</p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Valor total del pack</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$299.990 CLP</span></div></div><div class="p-4 sm:p-5 flex flex-col sm:flex-row sm:items-center justify-between gap-3 hover:bg-brand-cardBg/40 transition-colors"><div class="space-y-1 min-w-0"><h4 class="font-semibold text-brand-charcoal text-sm sm:text-base">Pack Torso</h4><p class="text-sm text-brand-muted">Pecho + espalda completa</p><p class="text-xs text-brand-muted">6 sesiones de cada zona incluida</p></div><div class="sm:text-right shrink-0"><span class="text-xs text-brand-muted block">Valor total del pack</span><span class="font-sans text-base sm:text-lg font-bold text-brand-charcoal">$279.990 CLP</span></div></div><p class="p-4 sm:p-5 text-sm text-brand-muted leading-relaxed">Cada pack incluye únicamente las zonas indicadas. La programación se define según evaluación y evolución; no implica completar seis sesiones en una sola visita.</p></div></div>
         <!-- CATEGORÍA 1: REMOCIÓN DE TATUAJES & MICROBLADING -->
         <div class="price-accordion bg-white border border-brand-border rounded-2xl overflow-hidden shadow-xs transition-all duration-300 hover:border-brand-gold/60">
           <button type="button" onclick="togglePriceAccordion(this)" aria-expanded="false" class="w-full p-5 sm:p-6 text-left flex items-center justify-between gap-4 bg-white hover:bg-brand-cardBg/60 transition-colors focus:outline-none">
@@ -978,7 +1255,7 @@ instagram-06.webp
 
         <!-- ===== WHATSAPP DIRECTO ===== -->
         <div class="mt-6 pt-6 border-t border-brand-border flex flex-col sm:flex-row items-center justify-center gap-4 text-xs text-brand-muted">
-          <span>¿Prefieres consultar directamente?</span>
+          <span>Preevaluación y reservas por WhatsApp</span>
           <a href="https://wa.me/56926313816" target="_blank" class="font-semibold text-brand-charcoal hover:text-brand-gold flex items-center gap-1.5 transition-colors">
             <span>Escribir al WhatsApp (+56 9 2631 3816)</span> &rarr;
           </a>
@@ -999,11 +1276,20 @@ instagram-06.webp
       <!-- FAQ Tabs -->
       <div class="flex items-center justify-center gap-2 flex-wrap mb-10">
         <button onclick="switchTab('general')" id="tab-general" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-brand-charcoal text-white transition-all">General</button>
+        <button onclick="switchTab('depilacion')" id="tab-depilacion" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Depilación Láser</button>
         <button onclick="switchTab('hollywood')" id="tab-hollywood" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Hollywood Peel</button>
         <button onclick="switchTab('tatuajes')" id="tab-tatuajes" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Tatuajes</button>
         <button onclick="switchTab('acne')" id="tab-acne" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Acné & Textura</button>
         <button onclick="switchTab('manchas')" id="tab-manchas" class="faq-tab px-4 py-2 text-xs font-semibold uppercase tracking-wider rounded-full bg-white text-brand-muted border border-brand-border hover:border-brand-gold transition-all">Manchas & Ojeras</button>
       </div>
+
+      <div id="content-depilacion" class="faq-content hidden space-y-4"><div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Qué tecnología utilizan para depilación láser?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">Trabajamos con Sopramax Cuatri Láser: 755, 808, 940 y 1064 nm combinados en un haz, con spot de zafiro y enfriamiento. Es el equipo destinado a depilación; los tratamientos de pigmentos y tatuajes se realizan con Nd:YAG Q-Switched.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Cómo debo prepararme para la sesión?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">Escríbenos por WhatsApp para la preevaluación y las indicaciones de tu zona. Evita el bronceado y los autobronceantes; protege la piel del sol. No extraigas el vello con cera o pinzas antes del tratamiento. Te indicaremos cuándo rasurar la zona. Informa sobre medicamentos, tratamientos de piel y exposición solar reciente; no suspendas medicación por tu cuenta.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Cuántas sesiones necesito y cada cuánto se realizan?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">El número y el intervalo se definen según la zona, las características del vello y la respuesta individual. Los packs publicados incluyen 6 sesiones por zona; ese formato no garantiza que el tratamiento finalice en seis sesiones. Puede requerirse mantención.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿La depilación es indolora y elimina todo el vello?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">La sensación y la respuesta varían entre personas y zonas. El cabezal incorpora enfriamiento, pero no prometemos ausencia de molestias ni eliminación total del vello. Evaluamos tu piel y vello antes de indicar el tratamiento.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Qué incluye cada categoría y qué zonas íntimas atienden?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">El precio XS, S, M, L o XL corresponde a una zona a elección de esa categoría. En zona púbica solo atendemos pubis externo femenino (monte de Venus). No incluye rebaje completo, genitales, mucosas, periné ni interglúteo.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Qué cuidados debo seguir después?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">Sigue las indicaciones entregadas para tu zona, protege la piel del sol y evita broncearte. Consulta al estudio si tienes dudas sobre la evolución o molestias persistentes. Los cuidados de depilación son distintos de los de remoción de tatuajes.</div></div>
+<div class="bg-white border border-brand-border rounded-2xl overflow-hidden"><button type="button" onclick="toggleAccordion(this)" aria-expanded="false" class="w-full p-6 text-left flex items-center justify-between gap-4 font-serif text-lg font-medium text-brand-charcoal"><span>¿Cómo puedo reservar?</span><span class="text-brand-gold text-xl transition-transform">+</span></button><div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">Puedes solicitar tu preevaluación y reservar por WhatsApp, o agendar mediante nuestro enlace de Calendly. Antes de comenzar confirmamos la zona, el plan elegido y las indicaciones de preparación.</div></div></div>
 
       <!-- TAB CONTENT: GENERAL -->
       <div id="content-general" class="faq-content space-y-4">
@@ -1031,7 +1317,7 @@ instagram-06.webp
             <span class="text-brand-gold text-xl transition-transform">+</span>
           </button>
           <div class="hidden px-6 pb-6 text-sm text-brand-muted leading-relaxed border-t border-brand-border/40 pt-4">
-            Utilizamos tecnología Láser Nd:YAG Q-Switched de nivel estético avanzado con emisión en nanosegundos (no es láser diodo de depilación ni luz pulsada convencional), calibrado para el tratamiento selectivo de pigmentos y estímulo de la piel.
+            Contamos con dos equipos: Sopramax Cuatri Láser para depilación, con 755, 808, 940 y 1064 nm en un haz y spot de zafiro con enfriamiento; y Nd:YAG Q-Switched para los tratamientos de tatuajes, microblading, Hollywood Peel, pigmentación y textura. Cada tecnología tiene sus propias aplicaciones y protocolos.
           </div>
         </div>
         <div class="bg-white border border-brand-border rounded-2xl overflow-hidden">
@@ -1270,7 +1556,7 @@ instagram-06.webp
           </div>
           <p class="text-[10px] uppercase tracking-[0.2em] text-brand-gold font-medium mb-4">Private Studio · San Fernando</p>
           <p class="text-xs text-slate-400 leading-relaxed">
-            Tratamientos estéticos avanzados con tecnología Láser Nd:YAG Q-Switched no invasiva y protocolos personalizados con reserva previa.
+            Depilación con Sopramax Cuatri Láser y tratamientos estéticos con Nd:YAG Q-Switched. Atención personalizada en San Fernando con reserva previa.
           </p>
         </div>
 
@@ -1368,6 +1654,7 @@ instagram-06.webp
       const isHidden = content.classList.contains('hidden');
       
       content.classList.toggle('hidden');
+      button.setAttribute('aria-expanded', String(isHidden));
       if (isHidden) {
         icon.textContent = '−';
         icon.style.transform = 'rotate(180deg)';
