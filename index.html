@@ -100,15 +100,15 @@ instagram-06.webp
       inset: 0;
       height: clamp(620px, 155vw, 1000px);
       max-height: 100%;
-      background: linear-gradient(180deg, rgba(253,251,247,.72) 0%, rgba(255,255,255,.78) 22%, rgba(255,255,255,.84) 58%, rgba(255,255,255,.93) 82%, #fff 100%);
+      background: linear-gradient(180deg, rgba(253,251,247,.72) 0%, rgba(255,255,255,.78) 22%, rgba(255,255,255,.84) 58%, rgba(255,255,255,.93) 82%, #FDFBF7 100%);
       pointer-events: none;
     }
-    .hero-studio { background-color: #fff; }
+    .hero-studio { background-color: #FDFBF7; }
     @media (min-width: 768px) {
       .hero-studio-photo { height: 100%; object-position: center 40%; }
       .hero-studio-veil {
         height: 100%;
-        background: linear-gradient(180deg, rgba(253,251,247,.60) 0%, rgba(255,255,255,.80) 35%, rgba(255,255,255,.84) 65%, #fff 100%);
+        background: linear-gradient(180deg, rgba(253,251,247,.60) 0%, rgba(255,255,255,.80) 35%, rgba(255,255,255,.84) 65%, #FDFBF7 100%);
       }
     }
     /* Contraste del hero: velo localizado y tipografía más definida. */
@@ -128,9 +128,21 @@ instagram-06.webp
       font-weight: 500;
     }
     .hero-studio h1 + p {
-      color: #334155;
-      font-weight: 400;
-      text-shadow: 0 1px 8px rgba(255,255,255,.65);
+      position: relative;
+      isolation: isolate;
+      color: #1E293B !important;
+      font-weight: 500 !important;
+      text-shadow: none;
+    }
+    .hero-studio h1 + p::before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      inset: -22px -16px;
+      border-radius: 28px;
+      background: rgba(255,255,255,.96);
+      filter: blur(14px);
+      pointer-events: none;
     }
     @media (min-width: 768px) {
       .hero-studio > .relative.z-10::before {
@@ -497,7 +509,7 @@ instagram-06.webp
   </header>
 
   <!-- ===== HERO PRINCIPAL ===== -->
-  <section class="hero-studio relative pt-16 pb-20 md:pt-24 md:pb-32 overflow-hidden bg-brand-goldLight">
+  <section class="hero-studio relative pt-12 pb-12 md:pt-20 md:pb-16 overflow-hidden bg-brand-goldLight">
     <img src="images/estudio-dermic-hero.png?v=2" alt="" aria-hidden="true" fetchpriority="high" decoding="async" width="1086" height="1448" class="hero-studio-photo">
     <div class="hero-studio-veil" aria-hidden="true"></div>
     <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 text-center">
@@ -526,7 +538,7 @@ instagram-06.webp
       </div>
 
       <!-- Trust Badges -->
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-16 mt-16 border-t border-brand-border/60 max-w-4xl mx-auto text-left">
+      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-8 mt-10 md:pt-10 md:mt-12 border-t border-brand-border/60 max-w-4xl mx-auto text-left">
         <div class="flex items-center gap-3">
           <div class="w-10 h-10 rounded-full bg-brand-goldLight border border-brand-border flex items-center justify-center text-brand-gold">
             <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path></svg>
@@ -559,9 +571,9 @@ instagram-06.webp
   </section>
 
   <!-- ===== SERVICIOS: DEPILACIÓN Y TRATAMIENTOS ND:YAG ===== -->
-  <section id="servicios" class="py-24 bg-white border-t border-brand-border">
+  <section id="servicios" class="py-14 md:py-16 bg-white border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Catálogo Especializado</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Tratamientos Especializados</h2>
         <p class="text-sm sm:text-base text-brand-muted font-light">Depilación facial y corporal, remoción de tatuajes y tratamientos estéticos para el cuidado de tu piel. Cada servicio se indica según evaluación.</p>
@@ -714,9 +726,9 @@ instagram-06.webp
   </section>
 
   <!-- ===== SECCIÓN TECNOLOGÍA: DOS EQUIPOS, MISMA JERARQUÍA ===== -->
-  <section id="tecnologia" class="py-24 bg-brand-goldLight border-t border-brand-border">
+  <section id="tecnologia" class="py-14 md:py-16 bg-brand-goldLight border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-12">
+      <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Tecnología para cada tratamiento</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Dos tecnologías.<br><span class="italic text-brand-gold">Un cuidado personalizado.</span></h2>
         <p class="text-sm sm:text-base text-brand-muted font-light">Contamos con dos equipos diferentes: uno para depilación láser y otro para tratamientos de piel y pigmentos.</p>
@@ -728,6 +740,10 @@ instagram-06.webp
             <p class="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold mb-3">Depilación facial y corporal</p>
             <h3 id="tecnologia-sopramax" class="font-serif text-3xl sm:text-4xl font-medium text-brand-charcoal leading-tight">Sopramax<br><span class="italic text-brand-gold">Cuatri Láser</span></h3>
           </div>
+          <figure class="mt-5 mb-1">
+            <img src="images/tecnologia-cuatrilaser.jpg" alt="Ilustración conceptual de luz láser dirigida al folículo piloso" width="900" height="600" loading="lazy" decoding="async" class="w-full h-40 sm:h-44 object-contain bg-brand-goldLight rounded-2xl border border-brand-border/50">
+            <figcaption class="text-xs text-brand-muted text-center mt-2">Esquema ilustrativo · no está a escala</figcaption>
+          </figure>
           <p class="text-base text-brand-muted leading-relaxed my-6">Equipo destinado a la depilación láser, con cuatro longitudes de onda combinadas en un haz y un cabezal con enfriamiento.</p>
           <dl class="space-y-5 mt-auto">
             <div>
@@ -750,6 +766,10 @@ instagram-06.webp
             <p class="text-xs uppercase tracking-[0.2em] text-brand-gold font-semibold mb-3">Tratamientos de piel y pigmentos</p>
             <h3 id="tecnologia-ndyag" class="font-serif text-3xl sm:text-4xl font-medium text-brand-charcoal leading-tight">Láser Nd:YAG<br><span class="italic text-brand-gold">Q-Switched</span></h3>
           </div>
+          <figure class="mt-5 mb-1">
+            <img src="images/tecnologia-ndyag.jpg" alt="Ilustración conceptual de un pulso láser sobre partículas de tinta en la dermis" width="900" height="600" loading="lazy" decoding="async" class="w-full h-40 sm:h-44 object-contain bg-brand-goldLight rounded-2xl border border-brand-border/50">
+            <figcaption class="text-xs text-brand-muted text-center mt-2">Esquema ilustrativo · no está a escala</figcaption>
+          </figure>
           <p class="text-base text-brand-muted leading-relaxed my-6">Equipo destinado a tratamientos de piel y pigmentos, con pulsos en nanosegundos y efecto fotoacústico sobre la tinta y el pigmento.</p>
           <dl class="space-y-5 mt-auto">
             <div>
@@ -776,9 +796,9 @@ instagram-06.webp
   </section>
 
   <!-- ===== SECCIÓN CASOS ANTES Y DESPUÉS ===== -->
-  <section id="antes-despues" class="py-24 bg-white border-t border-brand-border">
+  <section id="antes-despues" class="py-14 md:py-16 bg-white border-t border-brand-border">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Resultados Reales</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Casos y Transformaciones</h2>
         <p class="text-sm sm:text-base text-brand-muted font-light">Registro visual de la evolución y respuesta estética progresiva en cabina.</p>
@@ -827,9 +847,9 @@ instagram-06.webp
   </section>
 
   <!-- ===== SECCIÓN PRECIOS & TARIFARIO DEFINITIVO (ACORDEONES COMPACTOS V4) ===== -->
-  <section id="precios" class="py-24 bg-brand-goldLight border-t border-brand-border">
+  <section id="precios" class="py-14 md:py-16 bg-brand-goldLight border-t border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Tarifario Transparente</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Valores y Planes de Tratamiento</h2>
         <p class="text-sm sm:text-base text-brand-muted font-light">Depilación láser: sesión individual, packs de 6 sesiones por zona y combinaciones. Tratamientos Nd:YAG: sesión individual y packs de 5 y 10 sesiones. Valores en pesos chilenos (CLP).</p>
@@ -1262,7 +1282,7 @@ instagram-06.webp
   </section>
 
   <!-- ===== SECCIÓN AGENDAMIENTO & CALENDLY ===== -->
-  <section id="booking" class="py-24 bg-white border-t border-brand-border">
+  <section id="booking" class="py-14 md:py-16 bg-white border-t border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
       <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Agenda Online</span>
       <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Reserva tu Sesión o Evaluación</h2>
@@ -1297,9 +1317,9 @@ instagram-06.webp
   </section>
 
   <!-- ===== SECCIÓN FAQ (ACORDEONES POR CATEGORÍA) ===== -->
-  <section id="faq" class="py-24 bg-brand-goldLight border-t border-brand-border">
+  <section id="faq" class="py-14 md:py-16 bg-brand-goldLight border-t border-brand-border">
     <div class="max-w-4xl mx-auto px-4 sm:px-6">
-      <div class="text-center max-w-2xl mx-auto mb-16">
+      <div class="text-center max-w-2xl mx-auto mb-8 md:mb-10">
         <span class="text-xs uppercase tracking-[0.25em] text-brand-gold font-semibold">Resolución de Dudas</span>
         <h2 class="font-serif text-3xl sm:text-5xl font-light text-brand-charcoal mt-3 mb-4">Preguntas Frecuentes</h2>
         <p class="text-sm sm:text-base text-brand-muted font-light">Información técnica y recomendaciones para cada uno de nuestros procedimientos.</p>
